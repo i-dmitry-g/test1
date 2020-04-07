@@ -1,8 +1,11 @@
-def main():
-    print('My first git program')
-    print('And I change it every day')
-    print('And I change it every day')
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return "Привет от приложения Flask"
 
 
 if __name__ == '__main__':
-    main()
+    app.run()
