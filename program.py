@@ -1,11 +1,2 @@
-from flask import Flask
+print('test')
 
-app = Flask(__name__)
-
-@app.route("/")
-def index():
-    return "Привет от приложения Flask"
-
-
-if __name__ == '__main__':
-    app.run()
